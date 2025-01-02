@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBody {
+    background-color: #ffa600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    padding: 0px 100px 0px 0px;
+}
+
+.appLogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.appName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    width: 400px;
+}
+
+.appName p {
+    font-size: 26px;
+    margin: 0px 4px 0px 0px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+
+.navElement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    position: relative;
+    left: 60px;
+
+}
+
+.pathHome,
+.savedRecipes {
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+    color: black;
+    font-size: 25px;
+}
+
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+
+}
+
+.input {
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    font-size: 19px;
+
+}
+
+.input::placeholder {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.btn {
+    height: 40px;
+    font-weight: 600;
+    width: 80px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+}
+
+.btn:hover {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+
+.goToHome {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 450px) {
+    .navBody {
+        height: 55px;
+        flex-direction: column;
+        
+    }
+
+    .navElement {
+        width: 165px;
+        position: relative;
+        left: 10px;
+    }
+
+    .search {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        align-items: center;
+        background-color: antiquewhite;
+        position: relative;
+        left: 50px;
+        padding: 10px 0px;
+    }
+
+    .appName {
+        display: flex;
+        justify-content: space-evenly;
+        height: 50px;
+        width: 100vw;
+        position: relative;
+        left: 25px;
+    }
+
+    .input {
+        width: 250px;
+        height: 30px;
+        margin: 5px 0px 0px 0px;
+
+    }
+
+    .btn {
+        height: 30px;
+        width: 60px;
+        margin: 5px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    .btn:hover {
+        background: rgb(255, 0, 0);
+        box-shadow: none;
+    }
+
+}
+
+@media (min-width : 340px) and (max-width: 740px) {
+    .appName p {
+        position: relative;
+        right: 15px;
+        font-size: 22px;
+    }
+    
+
+    .navElement {
+        width: 145px;
+        position: relative;
+        left: 10px;
+        font-size: 20px;
+
+    }
+
+}
+
+
+
+
+@media (min-width : 480px) and (max-width: 1024px) {
+    .navBody {
+        justify-content: space-between;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .appName {
+        margin-left: 20px;
+    }
+
+    .appName p {
+        position: relative;
+        right: 17px;
+    }
+
+    .search {
+        width: 360px;
+        margin-right: 20px;
+    }
+
+    .input {
+        width: 300px;
+        height: 40px;
+        margin: 5px 40px 0px 0px;
+    }
+
+    .btn {
+        margin: 5px 100px 0px 0px;
+        padding: 0px 5px;
+
+    }
+
+    .btn:hover {
+        background: rgb(255, 0, 0);
+        box-shadow: none;
+    }
+
+
+
+    .navElement {
+        width: 165px;
+        position: relative;
+        left: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .input {
+        width: 150px;
+        font-size: 16px;
+        position: relative;
+        right: 30px;
+
+    }
+
+    .btn {
+        position: relative;
+        right: 45px;
+    }
+
+    .mode {
+        position: relative;
+        right: 90px;
+    }
+
+    .btn:hover {
+        background: rgb(255, 0, 0);
+        box-shadow: none;
+    }
+
+}
+
+@media (min-width : 768px) and (max-width: 1024px) {
+
+    .p{
+        position: relative;
+        left: 1px;
+    }
+
+    .navElement {
+        width: 145px;
+        position: relative;
+        right: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width : 1024px) and (max-width: 1366px) {
+    .navElement {
+        width: 175px;
+        position: relative;
+        left: 50px;
+    }
+}

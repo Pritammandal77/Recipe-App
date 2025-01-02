@@ -1,0 +1,143 @@
+.fullContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.fullCardBody {
+    width: 90vw;
+    border-radius: 20px;
+    background-color: #ffd4a9;
+}
+
+.FullImg {
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.fullImgEtc {
+    display: flex;
+}
+
+
+.fullRecipe {
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+.fullIngredients {
+    margin: 0px 0px 0px 40px;
+}
+
+.fullHeaderEtc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0px 0px 40px;
+}
+
+.fullInstructions {
+    margin: 15px 0px 0px 20px;
+
+}
+
+table {
+    width: 50vw;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    color: black;
+}
+
+thead {
+    background-color: #ff9900;
+}
+
+th,
+td {
+    border: 1px solid #000f4d;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: #ff9e1f;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ff5d5d;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #ffb951;
+  }
+
+
+
+@media screen and (max-width: 450px) {
+
+    .FullImg {
+        border-radius: 10px;
+        width: 500px;
+        height: 300px;
+    }
+
+    .fullCardBody {
+        width: 80vw;
+        position: relative;
+        top: 30px;
+    }
+
+    .fullImgEtc {
+        flex-direction: column;
+    }
+
+    .FullImg {
+        width: 80vw;
+    }
+
+    table {
+        width: 60vw;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+        color: black;
+    }
+}
+
+@media (min-width : 480px) and (max-width: 1024px) {
+    .FullImg {
+        border-radius: 10px;
+        width: 450px;
+        height: 500px;
+    }
+    table {
+        width: 40vw;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+        color: black;
+    }
+
+}
+
+@media (min-width : 760px) and (max-width: 1024px) {
+    .FullImg {
+        border-radius: 10px;
+        width: 400px;
+        height: 500px;
+    }
+
+
+     table {
+        width: 30vw;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+        color: black;
+    }
+}

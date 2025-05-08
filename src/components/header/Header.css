@@ -17,6 +17,12 @@
     padding: 0px 100px 0px 0px;
 }
 
+.appLogo-Name{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
 .appLogo {
     width: 40px;
     height: 40px;
@@ -27,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 20px;
     width: 400px;
 }
 
@@ -38,7 +44,6 @@
     cursor: pointer;
 
 }
-
 
 .navElement {
     display: flex;
@@ -107,14 +112,16 @@
 @media screen and (max-width: 450px) {
     .navBody {
         height: 55px;
-        flex-direction: column;
-        
+        flex-direction: column;  
+    }
+
+    .appLogo-Name{
+        display: flex;
+        gap:20px;
     }
 
     .navElement {
-        width: 165px;
-        position: relative;
-        left: 10px;
+        gap:20px;
     }
 
     .search {
@@ -146,7 +153,7 @@
 
     .btn {
         height: 30px;
-        width: 60px;
+        width: 80px;
         margin: 5px 0px 0px 0px;
         padding: 0px;
     }

@@ -12,14 +12,15 @@ body {
 .mainContainer {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px 0px;
+    place-items: center;
 }
 
 .cardBody {
-    margin-left: 100px;
-    height: 400px;
-    width: 300px;
+    /* margin-left: 100px; */
+    height: 370px;
+    width: 260px;
     border-radius: 10px;
     background-color: #ffd4a9;
     display: flex;
@@ -35,8 +36,8 @@ body {
 
 .img {
     border-radius: 10px 10px 0px 0px;
-    width: 300px;
-    height: 220px;
+    width: 260px;
+    height: 200px;
 }
 
 
@@ -64,6 +65,8 @@ body {
     transition: background-color 0.3s, color 0.3s;
     align-self: center;
     background-color: #ffa600;
+    position: relative;
+    top: 20px;
 }
 
 .navLink:hover {
@@ -263,12 +266,9 @@ body {
 }
 
 
-
-
 @media screen and (max-width: 450px) {
-
     .mainContainer {
-        margin: 170px 0px 0px 50px;
+        margin: 130px 0px 0px 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -282,8 +282,12 @@ body {
         border-radius: 10px;
         background-color: #ffd4a9;
 
-    }
+    } 
 
+    .img{
+        width: 300px;
+        
+    }
     .cardBody:hover {
         box-shadow:
             -10px -10px 15px #00000033,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useContext } from 'react';
 import { RecipeContext } from '../Contexts/RecipeContext';
-import './fullRecipe.css'
+import './FullRecipe.css'
 
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';

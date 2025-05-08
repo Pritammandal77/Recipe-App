@@ -40,7 +40,7 @@
 
 .fullInstructions {
     margin: 15px 0px 0px 20px;
-
+    
 }
 
 table {
@@ -68,10 +68,11 @@ tr:hover {
 
 tbody tr:nth-child(odd) {
     background-color: #ff5d5d;
-  }
-  tbody tr:nth-child(even) {
+}
+
+tbody tr:nth-child(even) {
     background-color: #ffb951;
-  }
+}
 
 
 
@@ -79,12 +80,12 @@ tbody tr:nth-child(odd) {
 
     .FullImg {
         border-radius: 10px;
-        width: 500px;
+        width: 90vw;
         height: 300px;
     }
 
     .fullCardBody {
-        width: 80vw;
+        width: 90vw;
         position: relative;
         top: 30px;
     }
@@ -93,12 +94,12 @@ tbody tr:nth-child(odd) {
         flex-direction: column;
     }
 
-    .FullImg {
-        width: 80vw;
+    .fullIngredients {
+        margin: 0px 0px 0px 5vw;
     }
 
     table {
-        width: 60vw;
+        width: 80vw;
         border-collapse: collapse;
         margin: 20px 0;
         font-size: 18px;
@@ -113,6 +114,7 @@ tbody tr:nth-child(odd) {
         width: 450px;
         height: 500px;
     }
+
     table {
         width: 40vw;
         border-collapse: collapse;
@@ -132,7 +134,7 @@ tbody tr:nth-child(odd) {
     }
 
 
-     table {
+    table {
         width: 30vw;
         border-collapse: collapse;
         margin: 20px 0;

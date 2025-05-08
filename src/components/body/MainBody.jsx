@@ -3,7 +3,6 @@ import './MainBody.css'
 import { NavLink } from 'react-router-dom';
 import { RecipeContext } from '../Contexts/RecipeContext';
 
-const recipeKey = "recipeKey";
 
 function MainBody() {
 
@@ -15,7 +14,7 @@ function MainBody() {
         // console.log(recipe)
         setTheFullRecipe(recipe)
     }
-
+ 
 
     // Save selected meal to localStorage
     const handleSave = (meal) => {
@@ -36,7 +35,7 @@ function MainBody() {
 
     return (
         <>
-            <div className="mainContainer">
+            <div className="mainContainer"> 
                 {loading ? (<div className="loaderBody"><div className="loader"></div></div>) :
                     (recipes ? (recipes.map((recipe) => (
                         <div key={recipe.idMeal} className="cardBody cardAni" onMouseEnter={() => handleFullRecipe(recipes.indexOf(recipe))}>
@@ -66,8 +65,3 @@ export default MainBody;
 
 
 //line 37 ->  //OnMouseEnter is used to send the index of the selective recipes , kyuki onClick se first time me fullRecipe nahi aa raha tha isliye ye use kiya
-
-
-{/* <button className="recipeBtn button" onClick={() => handleFullRecipe(recipes.indexOf(recipe))} >
-                            <NavLink to="/fullrecipe" className="navLink">fullRecipe</NavLink>
-                        </button> */}

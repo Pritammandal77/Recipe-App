@@ -19,7 +19,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="footer-bottom">
-                    <p>&copy; 2024 RecipeGram App. All Rights Reserved.</p>
+                    <p>&copy; 2025 RecipeGram App. All Rights Reserved.</p>
                 </div>
             </footer>
         </>

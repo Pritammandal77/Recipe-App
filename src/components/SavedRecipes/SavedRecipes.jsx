@@ -50,6 +50,7 @@ function SavedRecipes() {
                         </div>
                         <h6 className="category"> Area : {recipe.strArea}</h6>
                         <h6 className="category"> Category : {recipe.strCategory}</h6>
+                        <a href={recipe.strYoutube} target='_blank' className='ViewLiveVideo'>View Live</a>
                     </div>
                 ))) : (<div className="noSavedRecipes">
                     <div className="noSavedRecipesBody">

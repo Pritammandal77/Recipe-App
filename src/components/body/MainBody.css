@@ -31,7 +31,7 @@ body {
     box-shadow:
         -10px -10px 15px #00000033,
         10px 10px 15px #00000033;
-    scale: 1.02;
+    /* scale: 1.02; */
 }
 
 .img {
@@ -308,9 +308,11 @@ body {
 
 @media (min-width : 480px) and (max-width: 1024px) {
     .mainContainer {
+         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px 0px;
-
+        /* gap: 40px 0px; */
+        /* background-color: #f3a04e; */
+        /* place-items: center; */
     }
 
 
@@ -318,7 +320,7 @@ body {
         height: 450px;
         width: 38vw;
         position: relative;
-        right: 50px;
+        /* right: 50px; */
     }
 
     .img {

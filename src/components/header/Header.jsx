@@ -26,7 +26,6 @@ function Header() {
         setInputValue("")
     }
 
-
     const handleKeyDown = (event) => {
         if (event.key === "Enter") {
             handleSubmit();

@@ -11,38 +11,38 @@ import MainBody from '../body/MainBody';
 
 function FullRecipe() {
 
-  const { theFullRecipe, getFullRecipe } = useContext(RecipeContext)
-  // console.log(getFullRecipe)
+  const { theFullRecipe } = useContext(RecipeContext)
+
+  // console.log('the full recipe in fulrecipe.jsx', theFullRecipe)
+
+  // const imageRef = useRef()
+  // useGSAP(() => {
+  //   gsap.from(imageRef.current, {
+  //     opacity: 0,
+  //     x: -500,
+  //   })
+  // })
 
 
-  const imageRef = useRef()
-  useGSAP(() => {
-    gsap.from(imageRef.current, {
-      opacity: 0,
-      x: -500,
+  // const tableRef = useRef()
+  // useGSAP(() => {
+  //   gsap.from(tableRef.current, {
+  //     opacity: 0,
+  //     x: 500,
 
-    })
-  })
-
-  const tableRef = useRef()
-  useGSAP(() => {
-    gsap.from(tableRef.current, {
-      opacity: 0,
-      x: 500,
-
-    })
-  })
+  //   })
+  // })
 
   return (
     <>
 
-      {getFullRecipe && <div className="fullContainer">
+      {theFullRecipe && <div className="fullContainer">
         <div className="fullCardBody" >
           <div className="fullImgEtc">
 
-            <img src={getFullRecipe.strMealThumb} alt={getFullRecipe.strMeal} className="FullImg" ref={imageRef} />
+            <img src={theFullRecipe.strMealThumb} alt={theFullRecipe.strMeal} className="FullImg" />
 
-            <div className="fullIngredients" ref={tableRef}>
+            <div className="fullIngredients" >
               <table>
                 <thead>
                   <tr>
@@ -52,48 +52,48 @@ function FullRecipe() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>{getFullRecipe.strIngredient1}</td>
-                    <td>{getFullRecipe.strMeasure1}</td>
+                    <td>{theFullRecipe.strIngredient1}</td>
+                    <td>{theFullRecipe.strMeasure1}</td>
                   </tr>
                   <tr>
-                    <td>{getFullRecipe.strIngredient2}</td>
-                    <td>{getFullRecipe.strMeasure2}</td>
+                    <td>{theFullRecipe.strIngredient2}</td>
+                    <td>{theFullRecipe.strMeasure2}</td>
                   </tr>
                   <tr>
-                    <td>{getFullRecipe.strIngredient3}</td>
-                    <td>{getFullRecipe.strMeasure3}</td>
+                    <td>{theFullRecipe.strIngredient3}</td>
+                    <td>{theFullRecipe.strMeasure3}</td>
                   </tr>  <tr>
-                    <td>{getFullRecipe.strIngredient4}</td>
-                    <td>{getFullRecipe.strMeasure4}</td>
+                    <td>{theFullRecipe.strIngredient4}</td>
+                    <td>{theFullRecipe.strMeasure4}</td>
                   </tr>
-                  {getFullRecipe.strIngredient5 &&
+                  {theFullRecipe.strIngredient5 &&
                     <tr>
-                      <td>{getFullRecipe.strIngredient5}</td>
-                      <td>{getFullRecipe.strMeasure5}</td>
+                      <td>{theFullRecipe.strIngredient5}</td>
+                      <td>{theFullRecipe.strMeasure5}</td>
                     </tr>
                   }
-                  {getFullRecipe.strIngredient6 &&
+                  {theFullRecipe.strIngredient6 &&
                     <tr>
-                      <td>{getFullRecipe.strIngredient6}</td>
-                      <td>{getFullRecipe.strMeasure6}</td>
+                      <td>{theFullRecipe.strIngredient6}</td>
+                      <td>{theFullRecipe.strMeasure6}</td>
                     </tr>
                   }
-                  {getFullRecipe.strIngredient7 &&
+                  {theFullRecipe.strIngredient7 &&
                     <tr>
-                      <td>{getFullRecipe.strIngredient7}</td>
-                      <td>{getFullRecipe.strMeasure7}</td>
+                      <td>{theFullRecipe.strIngredient7}</td>
+                      <td>{theFullRecipe.strMeasure7}</td>
                     </tr>
                   }
-                  {getFullRecipe.strIngredient8 &&
+                  {theFullRecipe.strIngredient8 &&
                     <tr>
-                      <td>{getFullRecipe.strIngredient8}</td>
-                      <td>{getFullRecipe.strMeasure8}</td>
+                      <td>{theFullRecipe.strIngredient8}</td>
+                      <td>{theFullRecipe.strMeasure8}</td>
                     </tr>
                   }
-                  {getFullRecipe.strIngredient9 &&
+                  {theFullRecipe.strIngredient9 &&
                     <tr>
-                      <td>{getFullRecipe.strIngredient9}</td>
-                      <td>{getFullRecipe.strMeasure9}</td>
+                      <td>{theFullRecipe.strIngredient9}</td>
+                      <td>{theFullRecipe.strMeasure9}</td>
                     </tr>
                   }
 
@@ -105,11 +105,11 @@ function FullRecipe() {
 
           </div>
           <div className="fullHeaderEtc">
-            <h1 className="fullHeading">{getFullRecipe.strMeal}</h1>
-            <h2>({getFullRecipe.strArea})</h2>
+            <h1 className="fullHeading">{theFullRecipe.strMeal}</h1>
+            <h2>({theFullRecipe.strArea})</h2>
           </div>
           <h4 className="fullInstructions">Instructions:</h4>
-          <p className="fullRecipe" >{getFullRecipe.strInstructions}</p>
+          <p className="fullRecipe" >{theFullRecipe.strInstructions}</p>
 
         </div>
 

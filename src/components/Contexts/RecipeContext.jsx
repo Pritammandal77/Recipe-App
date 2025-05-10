@@ -7,9 +7,7 @@ export const RecipeProvider = ({ children }) => {
     const [inputData, setInputData] = useState("")
 
     //To get the id of meal for fullRecipe
-    const [theFullRecipe, setTheFullRecipe] = useState("")   // theFullRecipe ke hamara current recipe ka index hain
-
-    const [getFullRecipe, setGetFullRecipe] = useState({})  //isko bas define kiya hain , ab tak use nii kiya kahi pe
+    const [theFullRecipe, setTheFullRecipe] = useState("")   // we are getting the fullrecipe data from mainbody.jsx
 
     const [recipes, setRecipes] = useState([]);
 
@@ -30,7 +28,6 @@ export const RecipeProvider = ({ children }) => {
                 .then((data) => {
                     // console.log(data.meals[0])
                     setRecipes(data.meals); // Store the fetched data in state
-                    setGetFullRecipe(data.meals[theFullRecipe])
 
                     setLoading(false)
                     
@@ -44,7 +41,7 @@ export const RecipeProvider = ({ children }) => {
     
 
     return (
-        <RecipeContext.Provider value={{ inputData, updateRecipes, recipes, theFullRecipe, setTheFullRecipe, getFullRecipe, loading}}>
+        <RecipeContext.Provider value={{ inputData, updateRecipes, recipes, theFullRecipe, setTheFullRecipe, loading}}>
             {children}
         </RecipeContext.Provider>
     )
